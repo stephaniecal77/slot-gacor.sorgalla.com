@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html amp="" lang="id" amp-version="2203172113000" class="i-amphtml-singledoc i-amphtml-standalone">
+<html amp="" lang="id" amp-version="2203172113000">
   <head>
     <style amp-runtime="">
       html {
@@ -937,113 +937,6 @@
 
       /*# sourceURL=/extensions/amp-sidebar/0.1/amp-sidebar.css*/
     </style>
-    <style amp-extension="amp-lightbox">
-      amp-lightbox {
-        display: none;
-        position: fixed !important;
-        z-index: 1000;
-        top: 0 !important;
-        left: 0 !important;
-        bottom: 0 !important;
-        right: 0 !important
-      }
-
-      amp-lightbox[scrollable] {
-        overflow-y: auto !important;
-        overflow-x: hidden !important
-      }
-
-      amp-lightbox i-amphtml-ad-close-header {
-        height: 60px !important;
-        display: block !important;
-        visibility: visible !important;
-        opacity: 0;
-        position: fixed !important;
-        top: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        z-index: 1000 !important;
-        display: -ms-flexbox !important;
-        display: flex !important;
-        -ms-flex-align: center !important;
-        align-items: center !important;
-        -ms-flex-pack: right !important;
-        justify-content: right !important;
-        transition: opacity 0.1s ease-in
-      }
-
-      [animate-in=fly-in-bottom]>i-amphtml-ad-close-header,
-      [animate-in=fly-in-top]>i-amphtml-ad-close-header {
-        transition-delay: 0.2s
-      }
-
-      amp-lightbox .amp-ad-close-header {
-        opacity: 1 !important;
-        box-sizing: border-box;
-        padding: 5px;
-        line-height: 40px;
-        background-color: #000;
-        color: #fff;
-        font-family: Helvetica, sans-serif;
-        font-size: 12px;
-        cursor: pointer
-      }
-
-      amp-lightbox .amp-ad-close-header>:first-child {
-        margin-left: auto !important;
-        pointer-events: none !important
-      }
-
-      amp-lightbox .amp-ad-close-button {
-        display: block !important;
-        background: url('data:image/svg+xml;charset=utf-8,
-<svg xmlns="http://www.w3.org/2000/svg"width="24"height="24"fill="%23fff"> <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/> <path d="M0 0h24v24H0z"fill="none"/> </svg>') no-repeat;background-position:50%;width:40px;height:40px;pointer-events:none!important;border-radius:40px;margin-left:5px}amp-lightbox .amp-ad-close-header:active>.amp-ad-close-button{background-color:hsla(0,0%,100%,0.3)}
-
-            /*# sourceURL=/extensions/amp-lightbox/0.1/amp-lightbox.css*/
-    </style>
-    <style amp-extension="amp-carousel">
-      .amp-carousel-slide>.i-amphtml-replaced-content {
-        -o-object-fit: contain;
-        object-fit: contain
-      }
-
-      .amp-carousel-button {
-        position: absolute;
-        box-sizing: border-box;
-        top: 50%;
-        height: 34px;
-        width: 34px;
-        border-radius: 2px;
-        opacity: 0;
-        pointer-events: all;
-        background-color: rgba(0, 0, 0, .5);
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        transform: translateY(-50%);
-        visibility: hidden;
-        z-index: 10
-      }
-
-      .amp-carousel-button:focus {
-        border: 1px solid #000;
-        outline: 1px solid #fff
-      }
-
-      .amp-mode-mouse .amp-carousel-button,
-      amp-carousel.i-amphtml-carousel-has-controls .amp-carousel-button,
-      amp-carousel[controls] .amp-carousel-button {
-        opacity: 1;
-        visibility: visible
-      }
-
-      .amp-carousel-button-prev {
-        left: 16px;
-        background-image: url('data:image/svg+xml;charset=utf-8,
-<svg xmlns="http://www.w3.org/2000/svg"width="18"height="18"fill="%23fff"> <path d="M15 8.25H5.87l4.19-4.19L9 3 3 9l6 6 1.06-1.06-4.19-4.19H15v-1.5z"/> </svg>');background-size:18px 18px}.amp-carousel-button-next{right:16px;background-image:url('data:image/svg+xml; charset=utf-8,
-            <svg xmlns="http://www.w3.org/2000/svg"width="18"height="18"fill="%23fff"> <path d="M9 3 7.94 4.06l4.19 4.19H3v1.5h9.13l-4.19 4.19L9 15l6-6z"/> </svg>');background-size:18px 18px}.i-amphtml-carousel-button-start-hint .amp-carousel-button:not(.amp-disabled){animation:i-amphtml-carousel-hint 1s ease-in 3s 1 normal both}.amp-mode-mouse .i-amphtml-carousel-button-start-hint .amp-carousel-button:not(.amp-disabled){animation:none}@keyframes i-amphtml-carousel-hint{0%{opacity:1;visibility:visible}to{opacity:0;visibility:hidden}}amp-carousel .amp-carousel-button.amp-disabled{animation:none;clip:rect(0 0 0 0);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px}amp-carousel[i-amphtml-carousel-hide-buttons] .amp-carousel-button-next,amp-carousel[i-amphtml-carousel-hide-buttons] .amp-carousel-button-prev{opacity:0;pointer-events:none;visibility:visible!important}.i-amphtml-slides-container{display:-ms-flexbox!important;display:flex!important;-ms-flex-wrap:nowrap;flex-wrap:nowrap;height:100%!important;left:0;overflow-x:auto!important;overflow-y:hidden!important;position:absolute!important;top:0;width:100%!important;scroll-snap-type:x mandatory!important;scrollbar-width:none;padding-bottom:20px!important;box-sizing:content-box!important;-webkit-overflow-scrolling:touch!important}.i-amphtml-slides-container::-webkit-scrollbar{display:none!important}.i-amphtml-slides-container.i-amphtml-no-scroll{overflow-x:hidden!important}.i-amphtml-slide-item{-ms-flex-align:center!important;align-items:center!important;display:none!important;-ms-flex:0 0 100%!important;flex:0 0 100%!important;height:100%!important;-ms-flex-pack:center!important;justify-content:center!important;position:relative!important;scroll-snap-align:start!important;width:100%!important}.i-amphtml-slide-item>*{height:100%;width:100%;overflow:hidden!important}.i-amphtml-slide-item-show{display:-ms-flexbox!important;display:flex!important}.i-amphtml-carousel-end-marker,.i-amphtml-carousel-start-marker{background-color:transparent!important;display:block!important;-ms-flex:0 0 1px!important;flex:0 0 1px!important;height:100%!important;position:relative!important;scroll-snap-align:start!important;width:1px!important}.i-amphtml-carousel-start-marker{-ms-flex-order:-1!important;order:-1!important;margin-left:-1px!important}.i-amphtml-carousel-end-marker{-ms-flex-order:100000000!important;order:100000000!important;margin-right:-1px!important}.i-amphtml-slidescroll-no-snap.i-amphtml-slides-container{scroll-snap-type:none!important}.i-amphtml-slidescroll-no-snap .i-amphtml-slide-item{scroll-snap-align:none!important}.i-amphtml-slidescroll-no-snap.i-amphtml-slides-container.i-amphtml-no-scroll{-webkit-overflow-scrolling:auto!important}.amp-scrollable-carousel-slide{display:inline-block!important;margin-left:8px}.amp-scrollable-carousel-slide:first-child{margin-left:0px}.i-amphtml-scrollable-carousel-container{white-space:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important;-webkit-overflow-scrolling:touch!important}
-
-            /*# sourceURL=/extensions/amp-carousel/0.1/amp-carousel.css*/
-    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <style amp-boilerplate="">
@@ -1115,7 +1008,6 @@
       </style>
     </noscript>
     <script async="" src="https://cdn.ampproject.org/v0.js"></script>
-    <script async="" custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
     <script async="" custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async="" custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
     <script async="" custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
@@ -2265,16 +2157,12 @@
         color: #fff;
       }
     </style>
-    <script async="" custom-element="amp-auto-lightbox" data-script="amp-auto-lightbox" i-amphtml-inserted="" crossorigin="anonymous" src="https://cdn.ampproject.org/rtv/012203172113000/v0/amp-auto-lightbox-0.1.js"></script>
     <script async="" custom-element="amp-loader" data-script="amp-loader" i-amphtml-inserted="" crossorigin="anonymous" src="https://cdn.ampproject.org/rtv/012203172113000/v0/amp-loader-0.1.js"></script>
   </head>
   <body class="amp-dark-mode amp-mode-mouse" style="opacity: 1; visibility: visible; animation: 0s ease 0s 1 normal none running none;">
     <div class="logo-container">
       <a href="" class="logo">
-        <amp-img layout="responsive" height="20" width="75" src="https://i.postimg.cc/59GCyWkv/logo-bonanzajp.png" alt="Logo Bonanzajp Link Slot Gacor" noloading="" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive">
-          <i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 26.6667%;"></i-amphtml-sizer>
-          <img decoding="async" alt="Logo Bonanzajp Link Slot Gacor" src="https://i.postimg.cc/59GCyWkv/logo-bonanzajp.png" class="i-amphtml-fill-content i-amphtml-replaced-content">
-        </amp-img>
+        <amp-img layout="responsive" height="20" width="75" src="https://i.postimg.cc/59GCyWkv/logo-bonanzajp.png" alt="Logo Bonanzajp Link Slot Gacor" noloading="" layout="responsive"></amp-img>
       </a>
     </div>
 	<amp-img title="link slot gacor" src="https://i.postimg.cc/0QkPn3zf/bonanzajp-pragmaticplay-hari-raya-penuh-rejeki.jpg" alt="Situs Link Slot Gacor" width="1280" height="400" layout="responsive">
@@ -2390,34 +2278,13 @@
 	  
       <div class="fixed-footer">
         <a class="active" href="#">
-          <amp-img layout="intrinsic" height="75" width="75" src="https://i.postimg.cc/d075CzTg/login.png" alt="Daftar Link Slot Gacor" class="i-amphtml-element i-amphtml-layout-intrinsic i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="intrinsic">
-            <i-amphtml-sizer class="i-amphtml-sizer" slot="i-amphtml-svc">
-              <img alt="" role="presentation" aria-hidden="true" class="i-amphtml-intrinsic-sizer" src="data:image/svg+xml;charset=utf-8,
-																									<svg height=&quot;75px&quot; width=&quot;75px&quot;
-																										xmlns=&quot;http://www.w3.org/2000/svg&quot; version=&quot;1.1&quot;/>">
-            </i-amphtml-sizer>
-            <img decoding="async" alt="Daftar Link Slot Gacor" src="https://i.postimg.cc/d075CzTg/login.png" class="i-amphtml-fill-content i-amphtml-replaced-content">
-          </amp-img> <b>DAFTAR</b>
+          <amp-img layout="intrinsic" height="75" width="75" src="https://i.postimg.cc/d075CzTg/login.png" alt="Daftar Link Slot Gacor" layout="intrinsic"></amp-img> <b>DAFTAR</b>
         </a>
         <a href="#">
-          <amp-img layout="intrinsic" height="50" width="50" src="https://i.postimg.cc/d075CzTg/login.png" alt="Login Link Slot Gacor" class="i-amphtml-element i-amphtml-layout-intrinsic i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="intrinsic">
-            <i-amphtml-sizer class="i-amphtml-sizer" slot="i-amphtml-svc">
-              <img alt="" role="presentation" aria-hidden="true" class="i-amphtml-intrinsic-sizer" src="data:image/svg+xml;charset=utf-8,
-																												<svg height=&quot;50px&quot; width=&quot;50px&quot;
-																													xmlns=&quot;http://www.w3.org/2000/svg&quot; version=&quot;1.1&quot;/>">
-            </i-amphtml-sizer>
-            <img decoding="async" alt="Login Link Slot Gacor" src="https://i.postimg.cc/d075CzTg/login.png" class="i-amphtml-fill-content i-amphtml-replaced-content">
-          </amp-img> <b>LOGIN</b>
+          <amp-img layout="intrinsic" height="50" width="50" src="https://i.postimg.cc/d075CzTg/login.png" alt="Login Link Slot Gacor" layout="intrinsic"></amp-img> <b>LOGIN</b>
         </a>
         <a href="https://direct.lc.chat/13876053/" target="_blank" class="js_live_chat_link live-chat-link">
-          <amp-img class="live-chat-icon i-amphtml-element i-amphtml-layout-intrinsic i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" layout="intrinsic" height="75" width="75" src="https://i.postimg.cc/6q0QhbvN/live-chat.png" alt="Live Chat Link Slot Gacor" i-amphtml-layout="intrinsic">
-            <i-amphtml-sizer class="i-amphtml-sizer" slot="i-amphtml-svc">
-              <img alt="" role="presentation" aria-hidden="true" class="i-amphtml-intrinsic-sizer" src="data:image/svg+xml;charset=utf-8,
-																														<svg height=&quot;75px&quot; width=&quot;75px&quot;
-																																xmlns=&quot;http://www.w3.org/2000/svg&quot; version=&quot;1.1&quot;/>">
-            </i-amphtml-sizer>
-            <img decoding="async" alt="Live Chat Link Slot Gacor" src="https://i.postimg.cc/6q0QhbvN/live-chat.png" class="i-amphtml-fill-content i-amphtml-replaced-content">
-          </amp-img> <b>LIVECHAT</b>
+          <amp-img class="live-chat-icon i-amphtml-element i-amphtml-layout-intrinsic i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" layout="intrinsic" height="75" width="75" src="https://i.postimg.cc/6q0QhbvN/live-chat.png" alt="Live Chat Link Slot Gacor" layout="intrinsic"></amp-img> <b>LIVECHAT</b>
         </a>
       </div>
     </div>
