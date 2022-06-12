@@ -82,7 +82,7 @@
 </a>
                 </div>
             </div>          
-
+            <h3 style="color: #ffffff; font-weight: bold;" id="displayDateTime"></h3>
             <div class="title">
             </div>
             <section class="slot">
@@ -1334,6 +1334,18 @@
         <a href="https://api.whatsapp.com/send?phone=85517361447" rel="nofollow noopener" target="_blank"><img src="https://i.ibb.co/wBMhXn9/whatsapp.png" class="wabutton" alt="Chat whatsapp BONANZAJP"></a>
         <script src="js/PGSoft.js"></script>
         <script src="js/slide.js"></script>
+        <script type="text/javascript">
+                      var today = new Date();
+                      var day = today.getDay();
+                      var month = today.getMonth();
+                      var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+                      var monthArr = ["Januari", "Februari","Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November","Desember"];
+                      month = monthArr[month];
+                      var date = today.getDate()+' '+month+' '+today.getFullYear();
+                      //var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+                      var dateTime = date;
+                      document.getElementById("displayDateTime").innerHTML = daylist[day] + ', ' + dateTime;
+              </script>
 </body>
 
 </html>
